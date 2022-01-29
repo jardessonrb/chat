@@ -1,27 +1,54 @@
 import type { NextPage } from 'next';
 import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import iconeUser from '../public/icone-user.jpg';
+import Talk from '../components/talk'; 
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.sideNavigationBar}>
-        <div className={styles.userData}>
-          <img src="#" alt="Perfil" />
-          <span>Jardesson</span>
+
+      <div className={styles.logo}>
+        <div className={styles.areaIcon}>
+          <Image src={iconeUser} className={styles.icon}/>
         </div>
-        <div className={styles.searchTalk}>
-          <img src="#" alt="Icone" />
-          <span>Pesquise por uma conversa</span>
-        </div>
-        <div className={styles.talks}>
-          <div className={styles.talk}>
-            <img src="#" alt="Perfil" />
-            <span>Tadeuzinho UFPI</span>
-            <span className={styles.lastMessage}>Já terminei o trabalho</span>
-          </div>
-        </div>
+        <span>Jardesson</span>
       </div>
-      <h1>Bem-vindo ao chat</h1>
+
+      <div className={styles.topBar}>
+        <div className={styles.areaIcon}>
+          <Image src={iconeUser} className={styles.icon}/>
+        </div>
+        <span>Amor</span>
+      </div>
+
+      <div className={styles.sideBar}>
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+        <Talk />
+      </div>
+
+      <div className={styles.content}>
+       <div className={styles.messages}>
+
+       </div>
+       <div className={styles.areaSendMessage}>
+         <input type="text" />
+       </div>
+      </div>
+
     </div>
   )
 }
