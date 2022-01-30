@@ -83,6 +83,7 @@
 .content .areaMessages {
     width: 100%;
     flex: 8;
+    padding: 2rem;
     overflow-y: scroll;
     background-image: url(../public/fundo.png);
     background-size: cover;
@@ -134,4 +135,22 @@
 
 .content .areaSendMessage button .iconSendMessage{
     width: 30%;
+}
+
+.content .areaMessages .containerMessage{ 
+    width: 40%;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.content .areaMessages .containerMessage .areaTimeMessage{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.content .areaMessages .containerMessage .areaTimeMessage .timeOfMessage{
+    font-size: 1rem;
 }

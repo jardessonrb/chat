@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <div className={styles.areaIcon}>
           <Image src={iconeUser} className={styles.icon}/>
         </div>
-        <span>Amor</span>
+        <span>Tadeuzinho</span>
       </div>
 
       <div className={styles.sideBar}>
@@ -43,10 +43,82 @@ const Home: NextPage = () => {
 
       <div className={styles.content}>
        <div className={styles.areaMessages}>
-          <span>Messagem</span>
-          <span>Messagem</span>
-          <span>Messagem</span>
-          <span>Messagem</span>
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Bom dia, já conclui o trabalho.
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Adioionei mais coisas lá também
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Já criei os testes e fix mais algumas coisas lá também.
+                Adiantei a parte do README, descrevi como rodar o projeto e tudo mais ....
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Já criei os testes e fix mais algumas coisas lá também.
+                Adiantei a parte do README, descrevi como rodar o projeto e tudo mais ....
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Já criei os testes e fix mais algumas coisas lá também.
+                Adiantei a parte do README, descrevi como rodar o projeto e tudo mais ....
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+
+          <div className={styles.containerMessage}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+              <span className={styles.messageContent}>
+                Já criei os testes e fix mais algumas coisas lá também.
+                Adiantei a parte do README, descrevi como rodar o projeto e tudo mais ....
+              </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+              <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+          </div>
+          
        </div>
        <div className={styles.areaSendMessage}>
          <input type="text" name='input-message' className={styles.inputMessage} placeholder='Digite sua mensagem'/>
