@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import iconeUser from '../public/icone-user.jpg';
 import Talk from '../components/talk'; 
+import iconSendMessage from '../public/send_icon_128459.ico';
 
 const Home: NextPage = () => {
   return (
@@ -41,11 +42,15 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.content}>
-       <div className={styles.messages}>
-
+       <div className={styles.areaMessages}>
+          <span>Messagem</span>
+          <span>Messagem</span>
+          <span>Messagem</span>
+          <span>Messagem</span>
        </div>
        <div className={styles.areaSendMessage}>
-         <input type="text" />
+         <input type="text" name='input-message' className={styles.inputMessage} placeholder='Digite sua mensagem'/>
+         <button><Image src={iconSendMessage} className={styles.iconSendMessage}/></button>
        </div>
       </div>
 

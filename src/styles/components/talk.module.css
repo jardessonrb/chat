@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+.talk:hover {
+    background-color: #3f477a;
+}
+
 .talk .body {
     width: 100%;
 }
