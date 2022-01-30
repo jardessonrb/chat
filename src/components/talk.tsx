@@ -15,7 +15,7 @@ const Talk: NextComponentType = () => {
                 <span className={styles.timeLastMessage}>17:41</span>
               </div>
               <div>
-                <span className={styles.lastMessage}>Já terminei o trabalho</span>
+                <span className={styles.lastMessage}>Já terminei o trabalho ...</span>
               </div>
           </div>
         </div>

@@ -27,6 +27,14 @@
     width: 100%;
 }
 
+.timeLastMessage {
+    font-size: 1rem;
+}
+
+.lastMessage {
+    font-size: 1.4rem;
+}
+
 .talk .body .top {
     width: 100%;
     display: flex;

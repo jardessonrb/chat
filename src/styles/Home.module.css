@@ -83,7 +83,7 @@
 .content .areaMessages {
     width: 100%;
     flex: 8;
-    padding: 2rem;
+    padding: 2rem 4rem 0 4rem;
     overflow-y: scroll;
     background-image: url(../public/fundo.png);
     background-size: cover;
@@ -137,24 +137,43 @@
     width: 30%;
 }
 
-.content .areaMessages .containerMessage{ 
-    width: 40%;
-    background-color: var(--purple);
-    border-radius: 5px;
-    padding: 0.8rem;
-    margin-bottom: 0.3rem;
-}
 
-.content .areaMessages .containerMessage .areaTimeMessage{
+/*TOPBAR*/
+.topBar .topBarBody {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    height: 90%;
+    padding: 0.5rem;
 }
 
-.content .areaMessages .containerMessage .areaTimeMessage .timeOfMessage{
-    font-size: 1rem;
+.topBar .topBarBody .informationUser{
+    display: flex;
+    flex-direction: column;
 }
 
-.content .areaMessages .containerMessage .messageContent {
-    font-size: 1.4rem;
+.topBar .topBarBody .informationUser span:nth-child(2n){
+    font-size: 1.2rem;
+    margin-top: 1rem;
+} 
+
+.topBar .topBarBody .actionsUser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topBar .topBarBody .actionsUser button {
+    background: none;
+    border: none;
+    width: 2rem;
+    height: 100%;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+.topBar .topBarBody .actionsUser button:hover {
+    background-color: var(--purple-opacity);
+    border-radius: 50%;
 }

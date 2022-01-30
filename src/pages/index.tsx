@@ -1,10 +1,12 @@
 import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/home.module.css';
 import Image from 'next/image';
 import iconeUser from '../public/icone-user.jpg';
 import Talk from '../components/talk'; 
-import iconSendMessage from '../public/send_icon_128459.ico';
+import iconSendMessage from '../public/send.ico';
 import Message from '../components/message';
+import iconConfig from '../public/config.ico';
+import iconLogout from '../public/logout.ico'
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +23,20 @@ const Home: NextPage = () => {
         <div className={styles.areaIcon}>
           <Image src={iconeUser} className={styles.icon}/>
         </div>
-        <span>Tadeuzinho</span>
+        <div className={styles.topBarBody}>
+          <div className={styles.informationUser}>
+            <span>Tadeuzinho</span>
+            <span>Online</span>
+          </div>
+          <div className={styles.actionsUser}>
+            <button>
+              <Image src={iconConfig} className={styles.iconAction} />
+            </button>
+            <button>
+              <Image src={iconLogout} className={styles.iconAction} />
+            </button>
+          </div>
+        </div>
       </div>
 
       <div className={styles.sideBar}>
@@ -30,7 +45,14 @@ const Home: NextPage = () => {
 
       <div className={styles.content}>
        <div className={styles.areaMessages}>
-         <Message />
+         <Message type="receptor" />
+         <Message type="sender" />
+         <Message type="receptor" />
+         <Message type="sender" />
+         <Message type="receptor" />
+         <Message type="sender" />
+         <Message type="receptor" />
+         <Message type="sender" />
        </div>
        <div className={styles.areaSendMessage}>
          <input type="text" name='input-message' className={styles.inputMessage} placeholder='Digite sua mensagem'/>

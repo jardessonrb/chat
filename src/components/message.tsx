@@ -1,17 +1,33 @@
-import { NextComponentType } from "next";
 import styles from '../styles/components/message.module.css';
 
-const Message: NextComponentType = () => {
-    return (
-        <div className={styles.containerMessage}>
+type TypePropsMessage = {
+    type: "sender" | "receptor";
+}
+
+const Message = ({type}: TypePropsMessage) => {
+    return type == "receptor" ? 
+    (
+        <div className={styles.containerMessageReceptor}>
             <span className={styles.sender}>Tadeuzinho</span>
             <div>
-              <span className={styles.messageContent}>
+                <span className={styles.messageContent}>
                 Bom dia, já conclui o trabalho.
-              </span>
+                </span>
             </div>
             <div className={styles.areaTimeMessage}>
-              <span className={styles.timeOfMessage}>17:40</span>
+                <span className={styles.timeOfMessage}>17:40</span>
+            </div>
+        </div>
+    ) : (
+        <div className={styles.containerMessageSender}>
+            <span className={styles.sender}>Tadeuzinho</span>
+            <div>
+                <span className={styles.messageContent}>
+                Bom dia, já conclui o trabalho.
+                </span>
+            </div>
+            <div className={styles.areaTimeMessage}>
+                <span className={styles.timeOfMessage}>17:40</span>
             </div>
         </div>
     );

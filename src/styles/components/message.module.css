@@ -1,21 +1,35 @@
-.containerMessage{ 
-    width: 40%;
+.containerMessageReceptor{ 
+    width: 45%;
+    margin-right: 50%;
     background-color: var(--purple);
     border-radius: 5px;
     padding: 0.8rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
 }
 
-.containerMessage .areaTimeMessage{
+.containerMessageSender{ 
+    width: 45%;
+    margin-left: 50%;
+    background-color: var(--pink);
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.sender {
+    font-size: 1.4rem;
+}
+
+.areaTimeMessage{
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.containerMessage .areaTimeMessage .timeOfMessage{
+.areaTimeMessage .timeOfMessage{
     font-size: 1rem;
 }
 
-.containerMessage .messageContent {
+.messageContent {
     font-size: 1.4rem;
 }
