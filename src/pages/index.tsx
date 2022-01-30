@@ -40,7 +40,18 @@ const Home: NextPage = () => {
       </div>
 
       <div className={styles.sideBar}>
-        <Talk />
+        <div className={styles.searchUser}>
+          <input type="text" className={styles.inputSearchUser} placeholder='Digite o nome de usuario'/>
+        </div>
+        <div className={styles.talks}>
+          <Talk />
+          <Talk />
+          <Talk />
+          <Talk />
+          <Talk />
+          <Talk />
+          <Talk />
+        </div>
       </div>
 
       <div className={styles.content}>

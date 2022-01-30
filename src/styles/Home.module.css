@@ -25,7 +25,7 @@
     grid-area: sidebar;
     background-color: var(--dark-purple);
     border-right: 1px solid rgb(146, 145, 145);
-    overflow-y: scroll;
+    padding-bottom: 4rem;
 }
 
 .content {
@@ -59,25 +59,40 @@
 }
 /*TOPBAR*/
 
-.sideBar .talk {
-    width: 100%;
-    height: 8rem;
+.sideBar .searchUser {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0.8rem;
-    border-bottom: 1px solid rgb(146, 145, 145);
+    padding-left: 1rem;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--dark-purple);
+    margin-top: 0.5rem;
+    border-bottom: 1px solid var(--purple);
 }
 
-.sideBar .talk .body {
-    width: 100%;
+.sideBar .searchUser .inputSearchUser{
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    background-color: var(--purple-opacity);
+    color: rgb(12, 18, 59);
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
-.sideBar .talk .body .top {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.sideBar .talks {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.content .areaSendMessage .inputMessage::placeholder {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(12, 18, 59);
 }
 
 .content .areaMessages {
