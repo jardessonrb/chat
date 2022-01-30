@@ -7,8 +7,14 @@ import iconSendMessage from '../public/send.ico';
 import Message from '../components/message';
 import iconConfig from '../public/config.ico';
 import iconLogout from '../public/logout.ico'
+import { useRouter } from 'next/router';
 
 const Home: NextPage = () => {
+  const route = useRouter();
+  function sair() {
+    route.push("./login");
+  }
+
   return (
     <div className={styles.container}>
 
@@ -32,7 +38,7 @@ const Home: NextPage = () => {
             <button>
               <Image src={iconConfig} className={styles.iconAction} />
             </button>
-            <button>
+            <button onClick={sair}>
               <Image src={iconLogout} className={styles.iconAction} />
             </button>
           </div>
@@ -51,9 +57,11 @@ const Home: NextPage = () => {
           <Talk />
           <Talk />
           <Talk />
+          <Talk />
+          <Talk />
+          <Talk />
         </div>
       </div>
-
       <div className={styles.content}>
        <div className={styles.areaMessages}>
          <Message type="receptor" />

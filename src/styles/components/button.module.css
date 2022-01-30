@@ -1,0 +1,40 @@
+.buttonAnimated {
+    display: flex;
+    width: 90%;
+    border: none;
+    height: 4rem;
+    outline: 0;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple);
+    margin-top: 2rem;
+}
+
+.buttonAnimated .rotation{
+    width: 3rem;
+    height: 3rem;
+    border: 4px solid rgb(6, 205, 240);
+    border-top-color: rgb(144, 221, 235);
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+.buttonAnimated .placeholder {
+    color: rgb(12, 18, 59);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.buttonAnimated:hover {
+    background-color: var(--purple-opacity);
+}
+
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
