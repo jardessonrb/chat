@@ -154,3 +154,7 @@
 .content .areaMessages .containerMessage .areaTimeMessage .timeOfMessage{
     font-size: 1rem;
 }
+
+.content .areaMessages .containerMessage .messageContent {
+    font-size: 1.4rem;
+}

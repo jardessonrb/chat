@@ -1,0 +1,21 @@
+.containerMessage{ 
+    width: 40%;
+    background-color: var(--purple);
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.containerMessage .areaTimeMessage{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.containerMessage .areaTimeMessage .timeOfMessage{
+    font-size: 1rem;
+}
+
+.containerMessage .messageContent {
+    font-size: 1.4rem;
+}
